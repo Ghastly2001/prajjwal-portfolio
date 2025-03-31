@@ -151,7 +151,7 @@ const Navbar = () => {
             )
           )}
         </div>
-        <MobileMenu className="hidden" links={links} />
+        <MobileMenu links={links} />
       </div>
     </div>
   );
