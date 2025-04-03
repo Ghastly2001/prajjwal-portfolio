@@ -4,8 +4,6 @@ import React from "react";
 import FadeUp from "./animations/fade-up";
 
 const BlackBar = () => {
-  const date = new Date();
-  const currentYear = date.getFullYear();
   return (
     <div className="w-full h-full lg:h-[80px] bg-[#F9F6EF] px-4 py-8">
       <div className="max-w-7xl flex-col lg:flex-row flex items-center justify-between mx-auto h-full gap-5">

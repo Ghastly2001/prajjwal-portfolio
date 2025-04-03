@@ -3,12 +3,12 @@ import FadeUp from "@/components/animations/fade-up";
 import { Pointer } from "@/components/magicui/pointer";
 import RecommendedProjects from "@/components/recommended-projects";
 import { projects } from "@/data/projects";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Suspense, useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 // Wrapper component to handle Suspense
 function ProjectsPageContent() {
@@ -109,16 +109,17 @@ function ProjectsPageContent() {
   );
 }
 
-// Main page component wrapped in Suspense
-const ProjectsPage = () => {
+function RecommendedProjectsWrapper() {
   const searchParams = useSearchParams();
-  const categoryList = ["ui_ux", "fashion", "research"];
   const category = searchParams.get("category");
+  return <RecommendedProjects category={category!} />;
+}
 
+const ProjectsPage = () => {
   return (
     <Suspense fallback={<div className="min-h-screen">Loading...</div>}>
       <ProjectsPageContent />
-      <RecommendedProjects category={category!} />
+      <RecommendedProjectsWrapper />
     </Suspense>
   );
 };
@@ -142,13 +143,6 @@ function ProjectCard({
 
   cta_text: string;
 }) {
-  const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "start start"],
-  });
-  const scale = useTransform(scrollYProgress, [0, 1], [1.3, 1]);
-
   return (
     <div className="mt-[100px]">
       <Card
@@ -173,7 +167,6 @@ const Card = ({
   url,
   medal,
   desc,
-
   cta_text,
 }: {
   image?: string;
@@ -182,55 +175,56 @@ const Card = ({
   url?: string;
   medal?: boolean;
   desc?: string;
-  scale?: any;
   cta_text: string;
 }) => {
   return (
-    <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-8">
-      <motion.div
-        className={`min-w-full h-[300px] lg:min-w-[530px] lg:h-[450px] overflow-hidden rounded-x relative`}
-        onClick={() => window.open(url, "_blank")}
-      >
-        <motion.div className="relative w-full h-full rounded-xl">
-          <Pointer>
-            <motion.div
-              animate={{
-                scale: [0.8, 1, 0.8],
-              }}
-              className="cursor-not-allowed"
-            >
-              <span className="bg-white/70 text-base font-semibold me-2 px-5 py-3 rounded-full">
-                {cta_text}
-              </span>
-            </motion.div>
-          </Pointer>
-          <Image
-            src={image || ""}
-            fill
-            alt="bridging-the-gap"
-            className="object-cover rounded-xl"
-          />
-        </motion.div>
-      </motion.div>
-      <div className="w-full h-full flex flex-col justify-end gap-4 bg-[#F9F6EF]">
-        <div className="flex items-center gap-4 mt-auto">
-          {medal && (
-            <Image src={"/medal-3.svg"} width={20} height={20} alt="medal" />
-          )}
-          <p className="text-xs font-bold bg-[#FFE8EB] px-3 py-2 rounded-full text-[#FF667D]">
-            {badge}
-          </p>
-        </div>
-        <h1 className="text-2xl font-bold">{title}</h1>
-        <p className="text-sm text-[#333333] leading-[25px]">{desc}</p>
-        <button
-          className="flex items-center text-sm font-bold text-[#FF667D]"
+    <Suspense fallback={<div>Loading..</div>}>
+      <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-8">
+        <motion.div
+          className={`min-w-full h-[300px] lg:min-w-[530px] lg:h-[450px] overflow-hidden rounded-x relative`}
           onClick={() => window.open(url, "_blank")}
         >
-          {cta_text}
-          <ArrowRight strokeWidth={2} />
-        </button>
+          <motion.div className="relative w-full h-full rounded-xl">
+            <Pointer>
+              <motion.div
+                animate={{
+                  scale: [0.8, 1, 0.8],
+                }}
+                className="cursor-not-allowed"
+              >
+                <span className="bg-white/70 text-base font-semibold me-2 px-5 py-3 rounded-full">
+                  {cta_text}
+                </span>
+              </motion.div>
+            </Pointer>
+            <Image
+              src={image || ""}
+              fill
+              alt="bridging-the-gap"
+              className="object-cover rounded-xl"
+            />
+          </motion.div>
+        </motion.div>
+        <div className="w-full h-full flex flex-col justify-end gap-4 bg-[#F9F6EF]">
+          <div className="flex items-center gap-4 mt-auto">
+            {medal && (
+              <Image src={"/medal-3.svg"} width={20} height={20} alt="medal" />
+            )}
+            <p className="text-xs font-bold bg-[#FFE8EB] px-3 py-2 rounded-full text-[#FF667D]">
+              {badge}
+            </p>
+          </div>
+          <h1 className="text-2xl font-bold">{title}</h1>
+          <p className="text-sm text-[#333333] leading-[25px]">{desc}</p>
+          <button
+            className="flex items-center text-sm font-bold text-[#FF667D]"
+            onClick={() => window.open(url, "_blank")}
+          >
+            {cta_text}
+            <ArrowRight strokeWidth={2} />
+          </button>
+        </div>
       </div>
-    </div>
+    </Suspense>
   );
 };
