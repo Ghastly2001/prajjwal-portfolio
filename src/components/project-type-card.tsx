@@ -30,7 +30,7 @@ const ProjectTypeCard = ({
             className="w-[255px] h-[170px] group-hover:scale-110 transition-all duration-300"
           />
         </div> */}
-        <div className="w-[284px] aspect-[284/151] overflow-hidden">
+        <div className="w-[284px] aspect-[284/151] overflow-hidden rounded-[10px]">
           <video
             src={image}
             autoPlay

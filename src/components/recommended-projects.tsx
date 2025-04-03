@@ -7,19 +7,20 @@ const RecommendedProjects = ({ category }: { category: string }) => {
   const updatedProjectsList = projects.filter(
     (project) => project.url !== category
   );
+
   return (
-    <div className="bg-[#645577] mb-4 text-[#F9F6EF]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-10 py-14 flex flex-col items-center">
-        <div className="flex items-center md:gap-12 h-full flex-col sm:flex-row gap-12 ">
-          <FadeUp delay={0.1}>
-            <h1 className="max-w-full lg:max-w-[400px] text-2xl lg:text-3xl font-bold leading-none lg:leading-[32px] text-center">
-              Check out some of the{" "}
-              <span className="text-[#FF667D]">projects</span> I&apos;ve worked
-              on
-            </h1>
-          </FadeUp>
-        </div>
-        <div className="mt-[55px] flex lg:flex-row lg:items-center gap-10 justify-between flex-col">
+    <div className="bg-[#645577] text-[#F9F6EF] py-16 px-6 sm:px-12">
+      <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
+        {/* LEFT TEXT SECTION */}
+        <FadeUp delay={0.1} className="lg:w-1/3 text-left">
+          <h1 className="text-2xl font-bold leading-tight">
+            Check out some of the{" "}
+            <span className="text-[#FF667D]">projects</span> I&apos;ve worked on
+          </h1>
+        </FadeUp>
+
+        {/* RIGHT PROJECTS GRID */}
+        <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
           {updatedProjectsList.map((project, index) => (
             <FadeUp key={index} delay={index * 0.1}>
               <ProjectTypeCard
@@ -27,7 +28,6 @@ const RecommendedProjects = ({ category }: { category: string }) => {
                 url={project.url}
                 desc={project.desc}
                 title={project.title}
-                recommended={true}
               />
             </FadeUp>
           ))}
@@ -38,7 +38,3 @@ const RecommendedProjects = ({ category }: { category: string }) => {
 };
 
 export default RecommendedProjects;
-
-//1. we'll have a title of section
-//2. this component will take a categories
-//3. createv a logic for not in categories because that's what we have to show
