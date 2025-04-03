@@ -6,7 +6,7 @@ const ExpertiseSection = () => {
   return (
     <div className="bg-[#645577] h-full lg:h-[700px] w-full max-sm:px-4 max-sm:py-20  flex flex-col items-center justify-center">
       <div className="max-w-5xl mx-auto px-4 sm:px-10">
-        <div className="relative w-full flex h-[300px] items-start lg:items-center">
+        <div className="relative w-full flex h-[200px] items-start lg:items-center">
           <div className="w-full mb-auto flex flex-col gap-5">
             <FadeUp>
               {" "}
@@ -34,16 +34,19 @@ const ExpertiseSection = () => {
               </p>
             </FadeUp>
           </div>
-
           <FadeUp
             delay={0.1}
-            className="relative w-[500px] h-[400px] mb-24  hidden lg:block"
+            className=" w-[500px] h-[400px] mt-60 hidden lg:block"
           >
-            <Image src={"/person-thinking.svg"} fill alt="expertise" />
+            <video
+              src="/desktop_assets/homepage/software-icons.mp4"
+              autoPlay
+              loop
+            />
           </FadeUp>
-          <FadeUp className=" w-[250px] h-[200px] relative  lg:hidden -top-16 ">
+          {/* <FadeUp className=" w-[250px] h-[200px] relative  lg:hidden -top-16 ">
             <Image src={"/person-thinking.svg"} fill alt="expertise" />
-          </FadeUp>
+          </FadeUp> */}
         </div>
         <div className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-between lg:gap-10 gap-8 mt-12 lg:mt-0">
           <FadeUp>
@@ -53,7 +56,7 @@ const ExpertiseSection = () => {
                 width={36}
                 height={36}
                 alt="figma"
-                className="h-1/2 hidden lg:block"
+                className="h-1/2 hidden lg:block invert"
               />
               <div className="flex flex-col gap-2 lg:gap-4">
                 <h1 className="font-bold text-xl text-[#F9F6EF]">Figma</h1>
@@ -71,7 +74,7 @@ const ExpertiseSection = () => {
                 width={64}
                 height={64}
                 alt="figma"
-                className="h-1/2 hidden lg:block"
+                className="h-1/2 hidden lg:block invert"
               />
               <div className="flex flex-col gap-4">
                 <h1 className="font-bold text-xl text-[#F9F6EF]">
@@ -91,7 +94,7 @@ const ExpertiseSection = () => {
                 width={60}
                 height={60}
                 alt="figma"
-                className="h-1/2 hidden lg:block"
+                className="h-1/2 hidden lg:block invert"
               />
               <div className="flex flex-col gap-2 lg:gap-4">
                 <h1 className="font-bold text-xl text-[#F9F6EF]">Miro</h1>

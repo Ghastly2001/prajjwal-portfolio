@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${avenirNextLTPro.className} antialiased `}>
+      <body className={`${avenirNextLTPro.className} antialiased bg-[#F9F6EF]`}>
         <Navbar />
         <main className="mt-[80px] text-[#333333] bg-[#F9F6EF]">
           <div className="absolute w-[52px] h-[165px] right-0 top-32 hidden lg:block">

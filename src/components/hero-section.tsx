@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <div className="h-screen lg:h-[calc(100vh-80px)] max-w-5xl mx-auto my-16 lg:mb-0">
-      <div className="flex items-center  md:gap-12 h-[80%] px-8 sm:px-10 flex-col-reverse sm:flex-row-reverse justify-center">
+      <div className="flex items-center md:gap-12 h-[80%] px-8 sm:px-10 flex-col-reverse sm:flex-row-reverse justify-center">
         <div className="w-full lg:max-w-[500px] flex flex-col gap-5 lg:gap-3.5">
           <FadeUp>
             <p className="flex font-semibold tracking-tight max-sm:text-xs max-sm:items-center pb-3 lg:pb-0">
@@ -22,10 +22,10 @@ const HeroSection = () => {
           </FadeUp>
           <FadeUp delay={0.1}>
             <div className="text-5xl font-bold tracking-tight max-w-[400px] max-sm:text-3xl leading-[60px]">
-              Fashion &<div>UI-UX Designer</div>
+              Product Experience Designer
             </div>
             <p className="text-sm font-medium">
-              for startups to large organizations, let’s transform complex
+              ffor startups to large organizations, let’s transform complex
               design problems into simple solutions.
             </p>
           </FadeUp>
@@ -57,12 +57,13 @@ const HeroSection = () => {
 
         <FadeUp
           delay={0.1}
-          className="relative w-[75%] h-[75%] lg:w-[60%] lg:h-[60%] pointer-events-none -mb-16 lg:mb-0"
+          className=" w-[75%] h-[75%] lg:w-[60%] lg:h-[60%] pointer-events-none -mb-16 lg:mb-0 rounded-full"
         >
           <Image
-            src={"/hero-section-image.svg"}
+            src={"/new/prajjwal.jpeg"}
             fill
             alt="hero-section-image"
+            className="rounded-full"
           />
         </FadeUp>
       </div>

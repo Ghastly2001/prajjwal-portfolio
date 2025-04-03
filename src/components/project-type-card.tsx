@@ -23,13 +23,23 @@ const ProjectTypeCard = ({
           recommended ? "lg:w-[330px] lg:h-[374px]" : "lg:h-full lg:w-full"
         }  h-full w-full flex flex-col gap-[24px] cursor-pointer transition-all group`}
       >
-        <div className="flex items-center justify-center w-full border border-black/15 h-[225px] rounded-xl p-4 group-hover:shadow-lg transition-all duration-300">
+        {/* <div className="flex items-center justify-center w-full border border-black/15 h-[225px] rounded-xl p-4 group-hover:shadow-lg transition-all duration-300">
           <Image
             src={`/${image}.svg`}
             height={180}
             width={255}
             alt="ui_ux"
             className="w-[255px] h-[170px] group-hover:scale-110 transition-all duration-300"
+          />
+        </div> */}
+        <div className="w-[284px] aspect-[284/151] overflow-hidden">
+          <video
+            src={image}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
           />
         </div>
         <div
@@ -45,7 +55,7 @@ const ProjectTypeCard = ({
           </p>
 
           <div
-            className={`flex items-center gap-2 text-[#4BB543] font-bold mt-[16px] ${
+            className={`flex items-center gap-2 text-[#FF667D] font-bold mt-[16px] ${
               recommended && "justify-center"
             }`}
           >

@@ -5,13 +5,25 @@ import FadeUp from "./animations/fade-up";
 
 const AvailableSection = () => {
   return (
-    <div className="max-w-[1100px] h-full lg:h-[420px] mx-auto flex flex-col items-start lg:items-center justify-center gap-10 py-16 lg:py-0">
+    <div className="max-w-[1100px] h-full lg:h-[420px] mx-auto flex flex-col items-start lg:items-center justify-center gap-10 py-16 lg:py-0 relative">
+      <FadeUp className="absolute top-0 w-[100px] h-[70px] left-[20%] ">
+        <video
+          src={"/desktop_assets/homepage/footer-light.mp4"}
+          autoPlay
+          loop
+        />
+      </FadeUp>
+      <FadeUp className="absolute top-0 w-[100px] h-[70px] right-[20%]">
+        <video
+          src={"/desktop_assets/homepage/footer-light.mp4"}
+          autoPlay
+          loop
+        />
+      </FadeUp>
+
       <div className="flex items-center flex-col lg:flex-row justify-center px-8 lg:px-0 gap-10 lg:gap-0">
-        <FadeUp className="relative w-[100px] h-[70px] ">
-          <Image src={"/notepad.svg"} fill alt="notepad" />
-        </FadeUp>
         <FadeUp delay={0.1}>
-          <h1 className="font-bold text-2xl lg:text-3xl max-w-[450px]  text-center lg:pr-14">
+          <h1 className="font-bold text-2xl lg:text-3xl max-w-[450px]  text-center">
             From Concept to Creation Let&apos;s Make it Happen!
           </h1>
         </FadeUp>
@@ -23,32 +35,10 @@ const AvailableSection = () => {
           </p>
         </FadeUp>
         <FadeUp delay={0.3}>
-          <p className="text-[#333333] mt-[13px] max-w-[310] text-center">
+          <p className="text-[#333333] mt-[13px] max-w-[310px] text-center">
             Think carefully since this opportunity will not come again.
             It&apos;s a tiny world.
           </p>
-        </FadeUp>
-      </div>
-      <div className="lg:flex gap-7 items-center px-8 hidden">
-        <FadeUp delay={0.4}>
-          <Link href="mailto:prajjwalkumar98@gmail.com">
-            <Image src={"/mail.svg"} width={36} height={33} alt="mail" />
-          </Link>
-        </FadeUp>
-        <FadeUp delay={0.5}>
-          <Link href="https://www.linkedin.com/in/prajjwaldesigns/">
-            <Image
-              src={"/linkedin.svg"}
-              width={36}
-              height={33}
-              alt="linkedin"
-            />
-          </Link>
-        </FadeUp>
-        <FadeUp delay={0.6}>
-          <Link href="https://www.behance.net/PrajjwalDesigns">
-            <Image src={"/behance.svg"} width={36} height={33} alt="behance" />
-          </Link>
         </FadeUp>
       </div>
     </div>

@@ -217,7 +217,7 @@ const Card = ({
           {medal && (
             <Image src={"/medal-3.svg"} width={20} height={20} alt="medal" />
           )}
-          <p className="text-xs font-bold bg-[#645577] px-3 py-2 rounded-full text-[#F9F6EF]">
+          <p className="text-xs font-bold bg-[#FFE8EB] px-3 py-2 rounded-full text-[#FF667D]">
             {badge}
           </p>
         </div>

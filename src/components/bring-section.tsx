@@ -17,7 +17,14 @@ const BringSection = () => {
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-[26px] mt-[40px]">
         <FadeUp className=" border border-[#EBEBEB] rounded-xl  flex flex-col gap-[30px] p-4">
           <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
-            <Image src={"/clock.svg"} fill alt="clock" />
+            <video
+              src={"/desktop_assets/homepage/research.mp4"}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
           </div>
           <p className="text-sm lg:text-base text-[#333333] text-center">
             Conducting <span className="font-bold">research</span> to understand
@@ -29,7 +36,14 @@ const BringSection = () => {
           className=" border border-[#EBEBEB] rounded-xl  flex flex-col gap-[30px] p-4"
         >
           <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
-            <Image src={"/flag.svg"} fill alt="clock" />
+            <video
+              src={"/desktop_assets/homepage/lofi.mp4"}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
           </div>
           <p className="text-sm lg:text-base text-[#333333] text-center">
             Rough <span className="font-bold"> sketches/ideations </span> or{" "}
@@ -42,7 +56,14 @@ const BringSection = () => {
           className="border border-[#EBEBEB] rounded-xl flex flex-col gap-[30px] p-4"
         >
           <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
-            <Image src={"/notes.svg"} fill alt="clock" />
+            <video
+              src={"/desktop_assets/homepage/analysis-of-design.mp4"}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
           </div>
           <p className="text-sm lg:text-base text-[#333333] text-center">
             Creating detailed <span className="font-bold">documentation</span>{" "}
@@ -54,7 +75,14 @@ const BringSection = () => {
           className="border border-[#EBEBEB] rounded-xl flex flex-col gap-[30px] p-4"
         >
           <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
-            <Image src={"/photos.svg"} fill alt="clock" />
+            <video
+              src={"/desktop_assets/homepage/hifi.mp4"}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
           </div>
           <p className="text-sm lg:text-base text-[#333333] text-center">
             <span className="font-bold">High-fidelity</span> and visual designs,
@@ -66,7 +94,14 @@ const BringSection = () => {
           className=" border border-[#EBEBEB] rounded-xl  flex flex-col gap-[30px] p-4"
         >
           <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
-            <Image src={"/flower-pot.svg"} fill alt="clock" />
+            <video
+              src={"/desktop_assets/homepage/usability-issues.mp4"}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
           </div>
           <p className="text-sm lg:text-base text-[#333333] text-center">
             Testing designs with real users for{" "}
@@ -79,7 +114,14 @@ const BringSection = () => {
           className="border border-[#EBEBEB] rounded-xl  flex flex-col gap-[30px] p-4"
         >
           <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
-            <Image src={"/plane.svg"} fill alt="clock" />
+            <video
+              src={"/desktop_assets/homepage/system-design.mp4"}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
           </div>
           <p className="text-sm lg:text-base text-[#333333] text-center">
             Creating a cohesive <span className="font-bold">design system</span>{" "}

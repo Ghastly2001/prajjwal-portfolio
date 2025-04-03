@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="h-[82vh] max-w-5xl mx-auto flex flex-col items-start justify-center px-4 sm:px-10">
+    <div className="h-[82vh] max-w-5xl mx-auto flex flex-col items-start justify-center px-4 sm:px-6">
       <div className="flex items-start gap-6">
         <FadeUp className="relative w-[66px] h-[80px]">
           <Image src={"/about-man.svg"} fill alt="about" />
@@ -53,7 +53,14 @@ const page = () => {
           </div>
         </div>
         <FadeUp className="relative w-[500px] h-[350px] mt-auto">
-          <Image src={"/about-hero.svg"} fill alt="about-hero" />
+          <video
+            src="/desktop_assets/about-me-page/about-me-page.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
         </FadeUp>
       </div>
     </div>

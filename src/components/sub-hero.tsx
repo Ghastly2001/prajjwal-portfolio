@@ -5,7 +5,21 @@ import FadeUp from "./animations/fade-up";
 
 const SubHero = () => {
   return (
-    <div className="bg-[#645577] h-full lg:h-[600px] w-fullmax-sm:px-4 py-20 flex items-center justify-center">
+    <div className="bg-[#645577] h-full lg:h-[600px] py-20 flex items-center justify-center relative">
+      <Image
+        src={"/new/half-ellipse.svg"}
+        className="w-[151px] h-[153px] absolute left-[15%] -top-[38.5px]"
+        alt="ellipse"
+        width={56}
+        height={56}
+      />
+      <Image
+        src={"/new/ellipse.svg"}
+        className="w-[151px] h-[153px] absolute bottom-[15%] right-[41px]"
+        alt="ellipse"
+        width={56}
+        height={56}
+      />
       <div className="flex flex-col items-center justify-between h-full gap-7  px-8  lg:px-0">
         <div className="flex flex-col items-start lg:items-center justify-center h-full gap-7">
           <FadeUp className="flex flex-row lg:flex-col items-center justify-center h-full gap-2 lg:gap-7 -ml-2 lg:ml-0">
@@ -53,7 +67,7 @@ const SubHero = () => {
             className="border border-[#FF667D] lg:py-3.5 py-3 px-10 rounded-full font-bold bg-[#FF667D] hover:bg-transparent text-[#F9F6EF] hover:text-[#FF667D] transition-all w-full lg:w-auto text-center"
             onClick={() =>
               window.open(
-                "https://www.linkedin.com/in/prajjwaldesigns/",
+                "https://www.linkedin.com/in/prajjwaldesigns",
                 "_blank"
               )
             }

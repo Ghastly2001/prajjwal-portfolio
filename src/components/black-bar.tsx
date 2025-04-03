@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import FadeUp from "./animations/fade-up";
 
 const BlackBar = () => {
   const date = new Date();
@@ -30,14 +31,38 @@ const BlackBar = () => {
           </Link>
         </div>
         <div className=" flex items-center gap-4 lg:flex-row flex-col font-medium mt-3 ">
-          <p className=" text-sm text-[#FF667D]">
+          <p className=" text-sm text-[#FF667D] lg:hidden">
             Crafted with love 🤍 and lots of chai & coffee ☕
           </p>
-          <p className="mx-auto text-[#FF667D] text-sm lg:hidden">
-            © {currentYear} Prajjwal Designs.
-          </p>
+          <div className="lg:flex gap-7 items-center px-8 hidden">
+            <FadeUp delay={0.4}>
+              <Link href="mailto:prajjwalkumar98@gmail.com">
+                <Image src={"/mail.svg"} width={36} height={33} alt="mail" />
+              </Link>
+            </FadeUp>
+            <FadeUp delay={0.5}>
+              <Link href="https://www.linkedin.com/in/prajjwaldesigns/">
+                <Image
+                  src={"/linkedin.svg"}
+                  width={36}
+                  height={33}
+                  alt="linkedin"
+                />
+              </Link>
+            </FadeUp>
+            <FadeUp delay={0.6}>
+              <Link href="https://www.behance.net/PrajjwalDesigns">
+                <Image
+                  src={"/behance.svg"}
+                  width={36}
+                  height={33}
+                  alt="behance"
+                />
+              </Link>
+            </FadeUp>
+          </div>
         </div>
-        <p className=" text-sm hidden lg:block text-[#FF667D]">
+        <p className=" text-sm font-medium hidden lg:block text-[#645577]">
           Crafted with love 🤍 and lots of chai & coffee ☕
         </p>
       </div>

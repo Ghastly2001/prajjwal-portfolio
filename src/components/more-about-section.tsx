@@ -38,11 +38,13 @@ const MoreAboutSection = () => {
             </p>
           </FadeUp>
         </div>
-        <FadeUp
-          delay={0.3}
-          className="relative w-[204px] h-[142px] lg:w-1/2 lg:h-1/2 "
-        >
-          <Image src={"tea-window.svg"} fill alt="tea" />
+        <FadeUp delay={0.3} className="relative h-1/2 w-1/2 ">
+          <video
+            src="/desktop_assets/homepage/about-me.mp4"
+            autoPlay
+            loop
+            className="w-full aspect-square object-cover"
+          />
         </FadeUp>
       </div>
     </div>
