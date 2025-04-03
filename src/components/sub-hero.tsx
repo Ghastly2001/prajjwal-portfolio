@@ -53,7 +53,7 @@ const SubHero = () => {
             className="border border-[#FF667D] lg:py-3.5 py-3 px-10 rounded-full font-bold bg-[#FF667D] hover:bg-transparent text-[#F9F6EF] hover:text-[#FF667D] transition-all w-full lg:w-auto text-center"
             onClick={() =>
               window.open(
-                "https://www.linkedin.com/in/tanuj-pandey-55258223a",
+                "https://www.linkedin.com/in/prajjwaldesigns/",
                 "_blank"
               )
             }

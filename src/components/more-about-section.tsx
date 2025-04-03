@@ -18,7 +18,7 @@ const MoreAboutSection = () => {
           </FadeUp>
           <FadeUp delay={0.2}>
             <p className="leading-[28px] text-sm  text-[#333333] mt-[34px]">
-              I&apos;m Tanuj Pandey, an agile and collaborative designer who
+              I&apos;m Prajjwal Kumar, an agile and collaborative designer who
               isn&apos;t afraid to take risks. I thrive in dynamic environments
               that require me to step out of my comfort zone and challenge me to
               grow. As a self-taught Fashion and UX designer, I take ownership

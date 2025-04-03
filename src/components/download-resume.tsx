@@ -4,7 +4,7 @@ import React from "react";
 const DownloadResume = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/new/resume.pdf";
     link.download = "resume.pdf";
     link.click();
   };

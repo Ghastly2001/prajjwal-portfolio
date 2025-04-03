@@ -29,8 +29,8 @@ const avenirNextLTPro = localfont({
   ],
 });
 export const metadata: Metadata = {
-  title: "Tanuj Portfolio",
-  description: "Tanuj Portfolio",
+  title: "Prajjwal Portfolio",
+  description: "Prajjwal Portfolio",
 };
 
 export default function RootLayout({

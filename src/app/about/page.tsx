@@ -21,12 +21,12 @@ const page = () => {
           <div className="mt-10">
             <FadeUp delay={0.1}>
               <h1 className="text-base text-[#FF667D] font-medium">
-                TANUJ IN OFFICE
+                PRAJJWAL IN OFFICE
               </h1>
             </FadeUp>
             <FadeUp delay={0.2}>
               <p className="text-[#333333] leading-[28px] mt-[10px] text-sm">
-                At work, I&apos;m Tanuj-the go-to designer who thrives in a
+                At work, I&apos;m Prajjwal-the go-to designer who thrives in a
                 friendly and collaborative environment. With a mix of creativity
                 and camaraderie, I bring ideas to life while keeping the office
                 vibe light and fun!
@@ -36,7 +36,7 @@ const page = () => {
           <div className="mt-10">
             <FadeUp delay={0.3}>
               <h1 className="text-base text-[#FF667D] font-medium">
-                TANUJ IN PERSON
+                PRAJJWAL IN PERSON
               </h1>
             </FadeUp>
             <FadeUp delay={0.4}>

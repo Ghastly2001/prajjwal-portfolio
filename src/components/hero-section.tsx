@@ -8,14 +8,14 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <div className="h-screen lg:h-[calc(100vh-80px)] max-w-5xl mx-auto my-16 lg:mb-0">
-      <div className="flex items-center  md:gap-12 h-[80%] px-8 sm:px-10 flex-col-reverse sm:flex-row justify-center">
+      <div className="flex items-center  md:gap-12 h-[80%] px-8 sm:px-10 flex-col-reverse sm:flex-row-reverse justify-center">
         <div className="w-full lg:max-w-[500px] flex flex-col gap-5 lg:gap-3.5">
           <FadeUp>
             <p className="flex font-semibold tracking-tight max-sm:text-xs max-sm:items-center pb-3 lg:pb-0">
               <Image src={"/palm.svg"} width={25} height={25} alt="palm" />
               Hi! I&apos;m{" "}
               <span className="text-[#FF667D] tracking-tight mx-1">
-                Tanuj Pandey
+                Prajjwal Kumar
               </span>{" "}
               & your go-to
             </p>
@@ -40,7 +40,7 @@ const HeroSection = () => {
               </Link>
               <Link
                 className="border border-[#FF667D] lg:py-3.5 py-3 px-10 rounded-full font-bold bg-[#FF667D] hover:bg-transparent text-[#F9F6EF] hover:text-[#FF667D] transition-all w-full lg:w-auto text-center"
-                href={"mailto:tanujpandey0303@gmail.com"}
+                href={"mailto:prajjwalkumar98@gmail.com"}
               >
                 E-Mail
               </Link>
@@ -73,7 +73,7 @@ const HeroSection = () => {
           </p>
         </FadeUp>
         <FadeUp
-          className="relative flex items-center justify-center w-[80%] h-[70%] mx-auto z-10"
+          className="relative flex items-center justify-center w-[80%] h-[70%] mx-auto "
           delay={0.35}
         >
           <Image

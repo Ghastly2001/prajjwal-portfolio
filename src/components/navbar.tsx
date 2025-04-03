@@ -33,11 +33,11 @@ const Navbar = () => {
     },
     {
       name: "Linkedin",
-      href: "https://www.linkedin.com/in/tanuj-pandey-55258223a",
+      href: "https://www.linkedin.com/in/prajjwaldesigns/",
     },
     {
       name: "Behance",
-      href: "https://www.behance.net/tanujpandey2",
+      href: "https://www.behance.net/PrajjwalDesigns",
     },
   ];
   const pathname = usePathname();
@@ -64,9 +64,10 @@ const Navbar = () => {
                 className="relative "
                 onMouseEnter={() => setActive("Projects")}
                 onMouseLeave={() => setActive(null)}
+                onClick={() => setActive("Projects")}
               >
-                <Link
-                  href={link.href}
+                <div
+                  // href={link.href}
                   className={`px-6 text-sm flex items-center${
                     pathname === link.href || pathname === link.href.slice(0, 9)
                       ? "font-bold"
@@ -80,7 +81,7 @@ const Navbar = () => {
                     }`}
                     size={16}
                   />
-                </Link>
+                </div>
 
                 <AnimatePresence>
                   {active === "Projects" && (
@@ -99,7 +100,7 @@ const Navbar = () => {
                         initial={{ x: -10 }}
                         animate={{ x: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="w-40"
+                        className="w-20"
                       >
                         <Link
                           href="/projects?category=ui_ux"
@@ -115,9 +116,9 @@ const Navbar = () => {
                       >
                         <Link
                           className="text-black font-medium"
-                          href="/projects?category=fashion"
+                          href="/projects?category=product"
                         >
-                          Fashion
+                          Product
                         </Link>
                       </motion.div>
                       <motion.div
@@ -129,7 +130,7 @@ const Navbar = () => {
                           href="/projects?category=research_project"
                           className="text-black font-medium"
                         >
-                          Research Projects
+                          Documents
                         </Link>
                       </motion.div>
                     </motion.div>
@@ -145,6 +146,9 @@ const Navbar = () => {
                     ? "font-bold"
                     : ""
                 }`}
+                {...(link.name === "Linkedin" || link.name === "Behance"
+                  ? { target: "_blank" }
+                  : {})}
               >
                 {link.name}
               </Link>

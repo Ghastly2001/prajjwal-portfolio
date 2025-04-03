@@ -13,13 +13,13 @@ const ProjectsSection = () => {
       desc: "Worked on developing intuitive digital solutions through research, wireframing, and prototyping to enhance user experiences.",
     },
     {
-      title: "Fashion",
-      image: "fashion",
-      url: "fashion",
-      desc: "Focused on creating innovative designs that merge aesthetics with functionality, reflecting contemporary trends.",
+      title: "Product Design",
+      image: "product",
+      url: "product",
+      desc: "Developed intuitive 3D product solutions through research, sketches, and prototyping to enhance user functionality.",
     },
     {
-      title: "Research Project",
+      title: "Documentations",
       image: "research-project",
       url: "research_project",
       desc: "Documented traditional crafts and practices, highlighting their cultural value and craftsmanship and research paper.",
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
           </p>
         </FadeUp>
         <FadeUp delay={0.3}>
-          <Link href={"https://www.behance.net/tanujpandey2"}>
+          <Link href={"https://www.behance.net/PrajjwalDesigns"}>
             <button className="border border-[#FF667D] py-3 px-5 rounded-full bg-[#FF667D] text-[#F9F6EF] font-bold hover:bg-transparent hover:text-[#FF667D] transition-all mt-[37px] text-base lg:text-lg">
               View All Design Works
             </button>
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
             <span
               className="font-bold cursor-pointer"
               onClick={() =>
-                window.open("https://www.behance.net/tanujpandey2")
+                window.open("https://www.behance.net/PrajjwalDesigns")
               }
             >
               View All Designs Works

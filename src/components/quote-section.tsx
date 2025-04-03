@@ -8,23 +8,17 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    text: "Tanuj is a talented and dedicated professional who consistently delivered excellent results at Team Pumpkin. He brings design thinking expertise, a thorough approach, and a passion for challenges. I highly recommend him to any organization seeking innovative talent. He'll be a valuable asset!",
+    text: "Prajjwal is a talented and dedicated professional who consistently delivered excellent results at Team Pumpkin. He brings design thinking expertise, a thorough approach, and a passion for challenges. I highly recommend him to any organization seeking innovative talent. He'll be a valuable asset!",
     author: "Deepali Jain",
     role: "Product Manager",
     company: "Team Pumpkin",
   },
   {
     id: 2,
-    text: "Tanuj interned with us at Team Pumpkin and made a significant impact on our UI/UX design projects. His ability to quickly assimilate into the team and contribute to complex design challenges was remarkable. Tanuj showed exceptional skills and delivered high-quality work. His creative solutions and user-focused approach were crucial in achieving our design objectives. He also demonstrated strong collaboration skills, working effectively with cross-functional teams to ensure the best outcomes.",
+    text: "Prajjwal demonstrated an exceptional understanding of UI/UX principles and applied them effectively in his projects. His keen eye for details, combined with creative problem-solving skills, allowed him to contribute valuable insights and solutions. Prajjwal consistently showed a strong commitment to work, a willingness to learn, and an ability to collaborate effectively with team members. If you’re looking for a dedicated and talented UI/UX designer who is eager to grow and make an impact, Prajjwal would be an excellent choice.",
     author: "Arshad Shaikh",
     role: "Senior Manager",
     company: "Team Pumpkin",
-  },
-  {
-    id: 3,
-    text: "Tanuj Pandey is an excellent team leader and UI-UX designer. He constantly exhibits his high level of skill, which encourages teamwork. He is a master at staying up-to-date with the newest trends and has extraordinary design expertise. Tanuj's ability to spot UI elements in his designs gives them a distinctive and appealing touch, which makes him a valuable asset to any creative project.",
-    author: "Aviz Healthcare",
-    role: "Company",
   },
 ];
 
