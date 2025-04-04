@@ -24,7 +24,7 @@ const BringSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm lg:text-base text-[#333333] text-center">
+          <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy">
             Conducting <span className="font-bold">research</span> to understand
             the needs, behaviors of users.
           </p>
@@ -43,7 +43,7 @@ const BringSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm lg:text-base text-[#333333] text-center">
+          <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy">
             Rough <span className="font-bold"> sketches/ideations </span> or{" "}
             <span className="font-bold">low- fidelity</span> mockups of your
             initial ideas.
@@ -63,7 +63,7 @@ const BringSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm lg:text-base text-[#333333] text-center">
+          <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy">
             Creating detailed <span className="font-bold">documentation</span>{" "}
             and <span className="font-bold">specs</span> of designs.
           </p>
@@ -82,7 +82,7 @@ const BringSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm lg:text-base text-[#333333] text-center">
+          <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy">
             <span className="font-bold">High-fidelity</span> and visual designs,
             include layout, guide & graphic.
           </p>
@@ -101,7 +101,7 @@ const BringSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm lg:text-base text-[#333333] text-center">
+          <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy">
             Testing designs with real users for{" "}
             <span className="font-bold">usability issues</span> or areas for
             improve
@@ -121,7 +121,7 @@ const BringSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-sm lg:text-base text-[#333333] text-center">
+          <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy">
             Creating a cohesive <span className="font-bold">design system</span>{" "}
             that includes design principles, comps.
           </p>

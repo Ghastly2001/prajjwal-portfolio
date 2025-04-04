@@ -68,7 +68,7 @@ function ProjectsPageContent() {
               </h1>
             </FadeUp>
             <FadeUp delay={0.2}>
-              <p className="mt-6">
+              <p className="mt-6 font-gilroy leading-[32px] font-medium">
                 {projects[category as keyof typeof projects].heading}
               </p>
             </FadeUp>
@@ -77,7 +77,7 @@ function ProjectsPageContent() {
               target="_blank"
             >
               <FadeUp delay={0.3}>
-                <button className="border border-[#D5D5D5] py-2 px-5 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all mt-6">
+                <button className="border border-[#FF667D] lg:py-3.5 py-2 px-8 rounded-full font-bold bg-[#FF667D] hover:bg-transparent text-[#F9F6EF] hover:text-[#FF667D] transition-all w-full lg:w-auto text-center mt-6">
                   View All Works
                 </button>
               </FadeUp>
@@ -211,18 +211,20 @@ const Card = ({
             {medal && (
               <Image src={"/medal-3.svg"} width={20} height={20} alt="medal" />
             )}
-            <p className="text-xs font-bold bg-[#FFE8EB] px-3 py-2 rounded-full text-[#FF667D]">
+            <p className="text-xs font-bold bg-[#FFE8EB] px-3 py-2 rounded-full text-[#FF667D] font-gilroy">
               {badge}
             </p>
           </div>
           <h1 className="text-2xl font-bold">{title}</h1>
-          <p className="text-sm text-[#333333] leading-[25px]">{desc}</p>
+          <p className="text-sm text-[#333333] leading-[32px] font-gilroy font-medium ">
+            {desc}
+          </p>
           <button
-            className="flex items-center text-sm font-bold text-[#FF667D]"
+            className="flex items-center text-sm font-bold text-[#FF667D] gap-4"
             onClick={() => window.open(url, "_blank")}
           >
             {cta_text}
-            <ArrowRight strokeWidth={2} />
+            <ArrowRight strokeWidth={1} />
           </button>
         </div>
       </div>

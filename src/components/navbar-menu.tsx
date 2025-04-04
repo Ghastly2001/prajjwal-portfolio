@@ -111,7 +111,7 @@ export const HoveredLink = ({
 }: LinkProps &
   React.AnchorHTMLAttributes<HTMLAnchorElement> & { children: ReactNode }) => {
   return (
-    <Link {...rest} className="text-neutral-200">
+    <Link {...rest} className="text-neutral-200 font-gilroy">
       {children}
     </Link>
   );

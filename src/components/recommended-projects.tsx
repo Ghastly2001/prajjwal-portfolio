@@ -13,7 +13,7 @@ const RecommendedProjects = ({ category }: { category: string }) => {
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
         {/* LEFT TEXT SECTION */}
         <FadeUp delay={0.1} className="lg:w-1/3 text-left">
-          <h1 className="text-2xl font-bold leading-tight">
+          <h1 className="text-2xl font-bold leading-[42px]">
             Check out some of the{" "}
             <span className="text-[#FF667D]">projects</span> I&apos;ve worked on
           </h1>

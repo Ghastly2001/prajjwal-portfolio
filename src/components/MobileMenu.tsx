@@ -29,7 +29,7 @@ const MobileMenu = ({ className, links }: IMobileMenu) => {
       <Link
         key={item.name}
         href={item.href}
-        className={`inline-block font-medium transition-all duration-300 text-2xl md:text-sm xl:text-base hover:text-gray-300 text-white`}
+        className={`inline-block font-medium transition-all duration-300 text-2xl md:text-sm xl:text-base hover:text-gray-300 text-[#F9F6EF] font-gilroy`}
         onClick={() => setOpened(!opened)}
       >
         <span>{item.name}</span>
@@ -39,9 +39,9 @@ const MobileMenu = ({ className, links }: IMobileMenu) => {
   return (
     <div className="lg:hidden md:hidden ">
       {opened ? (
-        <X onClick={() => setOpened(!opened)} />
+        <X onClick={() => setOpened(!opened)} stroke="#645577" />
       ) : (
-        <MenuIcon onClick={() => setOpened(!opened)} />
+        <MenuIcon onClick={() => setOpened(!opened)} stroke="#645577" />
       )}
       <motion.div
         className={cn(

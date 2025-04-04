@@ -30,15 +30,17 @@ const HeroSection = () => {
           <FadeUp delay={0.2}>
             <div className="flex items-center gap-4">
               <Link
-                href="/resume.pdf"
+                href="/new/resume.pdf"
                 download={true}
                 className="border border-[#FF667D] py-3 px-10 rounded-full font-bold bg-[#FF667D] hover:bg-transparent text-white hover:text-[#FF667D] transition-all w-full lg:w-auto text-center font-gilroy"
+                target="_blank"
               >
                 Resume
               </Link>
               <Link
                 className="border border-[#FF667D] py-3 px-10 rounded-full font-bold bg-[#FF667D] hover:bg-transparent text-white hover:text-[#FF667D] transition-all w-full lg:w-auto text-center font-gilroy"
                 href={"mailto:prajjwalkumar98@gmail.com"}
+                target="_blank"
               >
                 E-Mail
               </Link>

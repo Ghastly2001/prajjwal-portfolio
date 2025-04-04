@@ -71,10 +71,10 @@ function GridCard({
         className="mt-1"
       />
       <div className="flex flex-col justify-start">
-        <h1 className="text-sm leading-[28px] lg:text-[16px] font-bold text-[#F9F6EF]">
+        <h1 className="text-sm leading-[28px] lg:text-[16px] font-bold text-[#F9F6EF] ">
           {title}
         </h1>
-        <p className="text-sm leading-[28px] lg:text-[16px] text-[#F9F6EF]">
+        <p className="text-sm leading-[28px] lg:text-[16px] text-[#F9F6EF] font-gilroy">
           {desc}
         </p>
       </div>

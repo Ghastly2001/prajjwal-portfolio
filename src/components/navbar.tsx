@@ -120,8 +120,8 @@ const Navbar = () => {
                         transition={{ delay: 0.3 }}
                       >
                         <Link
-                          href="/projects?category=research_project font-gilroy"
-                          className="text-black font-medium"
+                          href="/projects?category=research_project "
+                          className="text-black font-medium font-gilroy"
                         >
                           Documents
                         </Link>

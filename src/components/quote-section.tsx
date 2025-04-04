@@ -61,7 +61,7 @@ const TestimonialCarousel = () => {
                 className="mb-auto  lg:block"
               />
             </FadeUp>
-            <div className="w-[780px] px-2 lg:px-16">
+            <div className="w-[780px] px-2 lg:px-16 font-gilroy">
               <p className="text-center lg:leading-[32px] text-sm lg:text-[16px] text-[#F9F6EF]">
                 {testimonials[activeIndex].text}
               </p>
