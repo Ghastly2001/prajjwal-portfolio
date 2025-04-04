@@ -7,10 +7,10 @@ const ExpertiseSection = () => {
     <div className="bg-[#645577] h-full lg:h-[700px] w-full max-sm:px-4 max-sm:py-20  flex flex-col items-center justify-center">
       <div className="max-w-5xl mx-auto px-4 sm:px-10">
         <div className="relative w-full flex h-[200px] items-start lg:items-center">
-          <div className="w-full mb-auto flex flex-col gap-5">
+          <div className="w-full mb-auto flex flex-col gap-4">
             <FadeUp>
               {" "}
-              <h1 className="font-bold text-xl lg:text-3xl w-full hidden lg:block text-[#F9F6EF]">
+              <h1 className="font-bold text-xl lg:text-3xl w-full hidden lg:block text-[#F9F6EF] lg:leading-[42px]">
                 Skilled in industry-leading software,
                 <br /> I have <span className="text-[#FF667D]">
                   expertise
@@ -27,7 +27,7 @@ const ExpertiseSection = () => {
             </FadeUp>
 
             <FadeUp delay={0.1}>
-              <p className="text-sm text-[#F9F6EF] w-full tracking-wider leading-[28px] ">
+              <p className="text-sm text-[#F9F6EF] w-full tracking-wider leading-[28px] font-gilroy">
                 From creating wireframes and prototypes to high-fidelity mockups
                 and animations, I blend design tools and fashion insights to
                 bring my creations to life.
@@ -58,9 +58,16 @@ const ExpertiseSection = () => {
                 alt="figma"
                 className="h-1/2 hidden lg:block invert"
               />
+              <Image
+                src={"/figma-mobile.svg"}
+                width={23}
+                height={35}
+                alt="figma"
+                className="h-1/2 lg:hidden block invert mt-2"
+              />
               <div className="flex flex-col gap-2 lg:gap-4">
                 <h1 className="font-bold text-xl text-[#F9F6EF]">Figma</h1>
-                <p className="text-[#F9F6EF] leading-[28px] text-sm ">
+                <p className="text-[#F9F6EF] leading-[28px] text-sm font-gilroy">
                   3+ years of experience with Figma, I&apos;m now pretty much a
                   pro (or close enough)!
                 </p>
@@ -68,7 +75,7 @@ const ExpertiseSection = () => {
             </div>
           </FadeUp>
           <FadeUp delay={0.1}>
-            <div className="flex flex-col gap-2 lg:gap-4">
+            <div className="flex flex-row lg:flex-col gap-4">
               <Image
                 src={"/adobe-suite.svg"}
                 width={64}
@@ -76,11 +83,18 @@ const ExpertiseSection = () => {
                 alt="figma"
                 className="h-1/2 hidden lg:block invert"
               />
-              <div className="flex flex-col gap-4">
+              <Image
+                src={"/adobe-mobile.svg"}
+                width={23}
+                height={35}
+                alt="figma"
+                className="h-1/2 lg:hidden block invert mt-2"
+              />
+              <div className="flex flex-col gap-1">
                 <h1 className="font-bold text-xl text-[#F9F6EF]">
                   Adobe Suite
                 </h1>
-                <p className="text-[#F9F6EF] leading-[28px] text-sm ">
+                <p className="text-[#F9F6EF] leading-[28px] text-sm font-gilroy">
                   Using adobe suit for last 3+ years. Fav: Illustrator,
                   Photoshop, InDesign, XD.
                 </p>
@@ -88,7 +102,7 @@ const ExpertiseSection = () => {
             </div>
           </FadeUp>
           <FadeUp delay={0.2}>
-            <div className="flex flex-col gap-2 lg:gap-4">
+            <div className="flex flex-row lg:flex-col gap-4">
               <Image
                 src={"/miro.svg"}
                 width={60}
@@ -96,9 +110,16 @@ const ExpertiseSection = () => {
                 alt="figma"
                 className="h-1/2 hidden lg:block invert"
               />
-              <div className="flex flex-col gap-2 lg:gap-4">
+              <Image
+                src={"/miro-mobile.svg"}
+                width={23}
+                height={35}
+                alt="figma"
+                className="h-1/2 lg:hidden block invert mt-2"
+              />
+              <div className="flex flex-col gap-1 lg:gap-4">
                 <h1 className="font-bold text-xl text-[#F9F6EF]">Miro</h1>
-                <p className="text-[#F9F6EF] leading-[28px] text-sm ">
+                <p className="text-[#F9F6EF] leading-[28px] text-sm font-gilroy">
                   I am an expert in using Miro. Knowledge of JIRA as well.
                 </p>
               </div>
