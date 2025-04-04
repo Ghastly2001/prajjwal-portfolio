@@ -8,14 +8,14 @@ const SubHero = () => {
     <div className="bg-[#645577] h-full lg:h-[600px] py-20 flex items-center justify-center relative">
       <Image
         src={"/new/half-ellipse.svg"}
-        className="w-[151px] h-[153px] absolute left-[15%] -top-[38.5px]"
+        className="w-[151px] h-[153px] absolute left-[15%] -top-[38.5px] hidden lg:block"
         alt="ellipse"
         width={56}
         height={56}
       />
       <Image
         src={"/new/ellipse.svg"}
-        className="w-[151px] h-[153px] absolute bottom-[15%] right-[41px]"
+        className="w-[151px] h-[153px] absolute bottom-[15%] right-[41px] hidden lg:block"
         alt="ellipse"
         width={56}
         height={56}
@@ -30,12 +30,12 @@ const SubHero = () => {
               width={56}
               height={56}
             />
-            <h1 className="text-xl sm:text-3xl font-bold text-start lg:text-center text-[#F9F6EF]">
+            <h1 className="text-xl sm:text-3xl font-semibold text-start lg:text-center text-[#F9F6EF]">
               Exploring, Experimenting, Evolving
             </h1>
           </FadeUp>
           <FadeUp delay={0.1}>
-            <p className="max-w-[730px] text-start lg:text-center   lg:text-base lg:leading-[32px] max-sm:leading-[32px] max-sm:text-base text-[#F9F6EF]">
+            <p className="max-w-[730px] text-start lg:text-center font-gilroy lg:text-base lg:leading-[32px] max-sm:leading-[32px] max-sm:text-base text-[#F9F6EF]">
               Seasoned with 3.5 years of my institute exposure as a{" "}
               <span className="font-bold">fashion</span> and a
               <span className="font-bold"> UI-UX designer.</span> I&apos;ve
@@ -48,7 +48,7 @@ const SubHero = () => {
             </p>
           </FadeUp>
           <FadeUp delay={0.15}>
-            <p className="text-start lg:text-center max-sm:text-base text-[#F9F6EF]">
+            <p className="text-start lg:text-center max-sm:text-base text-[#F9F6EF] font-gilroy">
               Recently, crafted my experiences at{" "}
               <span
                 className="text-[#FF667D] font-medium cursor-pointer"
@@ -60,7 +60,7 @@ const SubHero = () => {
           </FadeUp>
         </div>
         <FadeUp
-          className="lg:flex flex-col items-center justify-center py-3 hidden"
+          className="lg:flex flex-col items-center justify-center py-3 hidden font-gilroy"
           delay={0.2}
         >
           <button

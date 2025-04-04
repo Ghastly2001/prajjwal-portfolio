@@ -5,8 +5,8 @@ import FadeUp from "./animations/fade-up";
 
 const HeroSection = () => {
   return (
-    <div className="h-screen lg:h-[calc(100vh-80px)] max-w-5xl mx-auto my-16 lg:mb-0">
-      <div className="flex items-center md:gap-12 h-[80%] px-8 sm:px-10 flex-col-reverse sm:flex-row-reverse justify-between">
+    <div className="h-screen lg:h-[calc(100vh-80px)] max-w-5xl mx-auto mt-16 -mb-8 lg:mb-0">
+      <div className="flex items-center md:gap-12 h-[80%] px-8 sm:px-10 flex-col-reverse sm:flex-row-reverse justify-evenly lg:justify-between">
         <div className="w-full lg:max-w-[500px] flex flex-col gap-6 lg:gap-4">
           <FadeUp>
             <p className="flex font-normal tracking-tight text-sm sm:text-base max-sm:items-center pb-3 lg:pb-0">
@@ -66,7 +66,7 @@ const HeroSection = () => {
           />
         </FadeUp>
       </div>
-      <div className="w-full h-[calc(100vh-80%-80px)] my-16 lg:my-0">
+      <div className="w-full h-[calc(100vh-80%-80px)] my-0 lg:my-0">
         <FadeUp delay={0.3}>
           <p className="text-sm text-[#FF667D] text-center font-medium font-gilroy">
             A FEW OF THE PLACES I WORKED
