@@ -29,13 +29,13 @@ const ProjectsSection = () => {
     <div className="max-w-5xl mx-auto px-8 sm:px-10 ">
       <div className=" md:gap-12 h-[80%] flex-col sm:flex-row mt-[85px] lg:mt-[110px]">
         <FadeUp>
-          <h1 className="max-w-full lg:max-w-[400px] text-2xl lg:text-3xl font-bold lg:leading-[32px] leading-[32px]">
+          <h1 className="max-w-full lg:max-w-[400px] text-2xl lg:text-3xl font-bold lg:leading-[40px] leading-[32px]">
             Check out some of the{" "}
             <span className="text-[#FF667D]">projects</span> I&apos;ve worked on
           </h1>
         </FadeUp>
         <FadeUp delay={0.2}>
-          <p className="max-w-full lg:max-w-[60%] leading-[32px] text-[16px] mt-[24px] lg:mt-[39px]">
+          <p className="max-w-full lg:max-w-[60%] leading-[32px] text-base mt-[24px] lg:mt-[24px] font-gilroy">
             Creativity meets functionality across fashion and UX design. Here,
             you&apos;ll find a curated selection of my work that reflects my
             passion for blending artistic vision with practical solutions.
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
         </FadeUp>
         <FadeUp delay={0.3}>
           <Link href={"https://www.behance.net/PrajjwalDesigns"}>
-            <button className="border border-[#FF667D] py-3 px-5 rounded-full bg-[#FF667D] text-[#F9F6EF] font-bold hover:bg-transparent hover:text-[#FF667D] transition-all mt-[37px] text-base lg:text-lg">
+            <button className="border border-[#FF667D] py-3 px-5 rounded-full bg-[#FF667D] text-[#F9F6EF] font-bold hover:bg-transparent hover:text-[#FF667D] transition-all mt-[24px] text-base lg:text-lg font-gilroy">
               View All Design Works
             </button>
           </Link>
