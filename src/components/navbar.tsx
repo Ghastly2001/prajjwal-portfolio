@@ -49,7 +49,7 @@ const Navbar = () => {
             className="object-contain"
           />
         </div>
-        <div className="hidden sm:flex items-center">
+        <div className="hidden sm:flex items-center font-gilroy">
           {links.map((link) =>
             link.name === "Projects" ? (
               <div
@@ -61,11 +61,11 @@ const Navbar = () => {
               >
                 <div
                   // href={link.href}
-                  className={`px-6 text-sm flex items-center${
+                  className={`px-6 text-sm flex font-gilroy items-center${
                     pathname === link.href || pathname === link.href.slice(0, 9)
-                      ? "font-bold"
-                      : ""
-                  } cursor-pointer`}
+                      ? "font-bold font-gilroy"
+                      : "font-gilroy"
+                  } cursor-pointer font-gilroy`}
                 >
                   <span>{link.name}</span>{" "}
                   <ChevronDown
@@ -87,7 +87,7 @@ const Navbar = () => {
                         stiffness: 300,
                         damping: 20,
                       }}
-                      className="absolute top-4 left-0 bg-white backdrop-blur-sm p-4 rounded-lg shadow-xl space-y-3"
+                      className="absolute top-4 left-0 bg-white backdrop-blur-sm p-4 rounded-lg shadow-xl space-y-3 font-gilroy"
                     >
                       <motion.div
                         initial={{ x: -10 }}
@@ -97,7 +97,7 @@ const Navbar = () => {
                       >
                         <Link
                           href="/projects?category=ui_ux"
-                          className="text-black font-medium flex gap-2"
+                          className="text-black font-medium flex gap-2 font-gilroy"
                         >
                           UI-UX
                         </Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
                         transition={{ delay: 0.2 }}
                       >
                         <Link
-                          className="text-black font-medium"
+                          className="text-black font-medium font-gilroy"
                           href="/projects?category=product"
                         >
                           Product
@@ -120,7 +120,7 @@ const Navbar = () => {
                         transition={{ delay: 0.3 }}
                       >
                         <Link
-                          href="/projects?category=research_project"
+                          href="/projects?category=research_project font-gilroy"
                           className="text-black font-medium"
                         >
                           Documents

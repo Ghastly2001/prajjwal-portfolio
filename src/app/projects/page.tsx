@@ -87,10 +87,11 @@ function ProjectsPageContent() {
             delay={0.3}
             className="relative w-[238px] h-[156px] lg:w-[400px] lg:h-[280px]"
           >
-            <Image
+            <video
               src={projects[category as keyof typeof projects].image}
-              alt={category}
-              fill
+              autoPlay
+              loop
+              playsInline
             />
           </FadeUp>
         </div>

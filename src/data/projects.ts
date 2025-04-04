@@ -2,7 +2,7 @@ export const projects = {
   ui_ux: {
     heading:
       "Exploring the Interaction of Design and Innovation: Here are a few selected projects that highlight my passion for designing intuitive and impactful user experiences.",
-    image: "/ui-ux-project.svg",
+    image: "/desktop_assets/ux-project-page/ui-ux-page.mp4",
     project_list: [
       {
         image: "/bridging-the-gap.svg",
@@ -54,7 +54,7 @@ export const projects = {
   product: {
     heading:
       "Design for Everyday Convenience: Here are a few selected projects that showcase my passion for creating products that simplify and enhance everyday lifestyles through thoughtful design and innovation.",
-    image: "/fashion-category.svg",
+    image: "/desktop_assets/product-project-page/product-page.mp4",
     project_list: [
       {
         image: "/new/feeder.svg",
@@ -88,7 +88,7 @@ export const projects = {
   research_project: {
     heading:
       "Collection of document, including research papers and craft documentation. Each project reflects my journey of exploring ideas, culture, and design through detailed research and storytelling.",
-    image: "/research-category.svg",
+    image: "/desktop_assets/document-project-page/documents-project.mp4",
     project_list: [
       {
         image: "/new/glimpse.svg",
