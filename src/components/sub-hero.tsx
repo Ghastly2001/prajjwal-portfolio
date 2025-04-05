@@ -30,25 +30,25 @@ const SubHero = () => {
               width={56}
               height={56}
             />
+
             <h1 className="text-xl sm:text-3xl font-semibold text-start lg:text-center text-[#F9F6EF]">
               Exploring, Experimenting, Evolving
             </h1>
           </FadeUp>
           <FadeUp delay={0.1}>
-            <p className="max-w-[730px] text-start lg:text-center font-gilroy lg:text-base lg:leading-[32px] max-sm:leading-[32px] max-sm:text-base text-[#F9F6EF]">
-              Seasoned with 3.5 years of my institute exposure as a{" "}
-              <span className="font-bold">fashion</span> and a
-              <span className="font-bold"> UI-UX designer.</span> I&apos;ve
-              worked with various brands encompassing in Fashion, Healthcare,
-              Insurtech, Manufacturing, E-commerce and more. Be it{" "}
-              <span className="font-bold">website, apps</span> or
-              <span className="font-bold"> garment</span>, my learn-it-all
-              attitude and creative mindset drives me to create prototypes that
-              resonate with users and drive success.
+            <p className="max-w-[730px] text-start lg:text-center font-gilroy lg:text-base lg:leading-[32px] max-sm:leading-[32px] max-sm:text-base text-[#F9F6EF] font-medium">
+              Seasoned with <span className="font-bold">3.5 years</span> of my
+              institute exposure as a{" "}
+              <span className="font-bold">Product-Experience designer.</span>{" "}
+              I&apos;ve worked with various brands encompassing in Fashion,
+              Healthcare, Insurtech, Manufacturing, E-commerce and more. Be it{" "}
+              website, apps my learn-it-all attitude and creative mindset drives
+              me to create prototypes that resonate with users and drive
+              success.
             </p>
           </FadeUp>
           <FadeUp delay={0.15}>
-            <p className="text-start lg:text-center max-sm:text-base text-[#F9F6EF] font-gilroy">
+            <p className="text-start lg:text-center max-sm:text-base text-[#F9F6EF] font-gilroy font-medium">
               Recently, crafted my experiences at{" "}
               <span
                 className="text-[#FF667D] font-medium cursor-pointer"

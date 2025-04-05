@@ -49,8 +49,8 @@ const ProjectTypeCard = ({
             {title}
           </h1>
           <p
-            className={`mt-2 line-clamp-3 font-gilroy tracking-wide leading-[32px] ${
-              recommended && "text-center font-gilroy"
+            className={`mt-2 line-clamp-3 font-gilroy font-medium tracking-wide leading-[32px] ${
+              recommended && "text-center font-gilroy font-medium"
             }`}
           >
             {desc}

@@ -35,12 +35,12 @@ const ProjectsSection = () => {
           </h1>
         </FadeUp>
         <FadeUp delay={0.2}>
-          <p className="max-w-full lg:max-w-[60%] leading-[32px] text-base mt-[24px] lg:mt-[24px] font-gilroy">
-            Creativity meets functionality across fashion and UX design. Here,
-            you&apos;ll find a curated selection of my work that reflects my
-            passion for blending artistic vision with practical solutions.
-            Explore my work to see how I integrate style with purpose, creating
-            designs that are both visually captivating and user-centric.
+          <p className="max-w-full lg:max-w-[60%] leading-[32px] text-base mt-[24px] lg:mt-[24px] font-gilroy font-medium">
+            Creativity meets functionality across UX design. Here, you&apos;ll
+            find a curated selection of my work that reflects my passion for
+            blending artistic vision with practical solutions. Explore my work
+            to see how I integrate style with purpose, creating designs that are
+            both visually captivating and user-centric
           </p>
         </FadeUp>
         <FadeUp delay={0.3}>
@@ -66,7 +66,7 @@ const ProjectsSection = () => {
       </div>
       <FadeUp>
         <div className="relative mt-[65px] w-full rounded-[10px]  overflow-hidden bg-[#FF667D] mb-[80px]">
-          <div className="w-[calc(100%-5px)] h-full bg-[#FFE8EC] text-sm  py-3 px-10 text-[#FF667D] rounded-l-[10px] ml-auto leading-[24px]">
+          <div className="w-[calc(100%-5px)] h-full bg-[#FFE8EC] text-sm  py-3 px-10 text-[#FF667D] rounded-l-[10px] ml-auto leading-[24px] font-gilroy font-medium">
             These are the best products I&apos;ve worked. Also click on the{" "}
             <span
               className="font-bold cursor-pointer"

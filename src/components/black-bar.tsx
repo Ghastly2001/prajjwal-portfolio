@@ -9,12 +9,15 @@ const BlackBar = () => {
       <div className="max-w-7xl flex-col lg:flex-row flex items-center justify-between mx-auto h-full gap-5">
         <div className="flex gap-7 items-center px-8 lg:hidden">
           <FadeUp delay={0.4}>
-            <Link href="mailto:prajjwalkumar98@gmail.com">
+            <Link href="mailto:prajjwalkumar98@gmail.com" target="_blank">
               <Image src={"/mail.svg"} width={36} height={33} alt="mail" />
             </Link>
           </FadeUp>
           <FadeUp delay={0.5}>
-            <Link href="https://www.linkedin.com/in/prajjwaldesigns/">
+            <Link
+              href="https://www.linkedin.com/in/prajjwaldesigns/"
+              target="_blank"
+            >
               <Image
                 src={"/linkedin.svg"}
                 width={36}
@@ -24,7 +27,10 @@ const BlackBar = () => {
             </Link>
           </FadeUp>
           <FadeUp delay={0.6}>
-            <Link href="https://www.behance.net/PrajjwalDesigns">
+            <Link
+              href="https://www.behance.net/PrajjwalDesigns"
+              target="_blank"
+            >
               <Image
                 src={"/behance.svg"}
                 width={36}
@@ -40,12 +46,15 @@ const BlackBar = () => {
           </p>
           <div className="lg:flex gap-7 items-center px-8 hidden">
             <FadeUp delay={0.4}>
-              <Link href="mailto:prajjwalkumar98@gmail.com">
+              <Link href="mailto:prajjwalkumar98@gmail.com" target="_blank">
                 <Image src={"/mail.svg"} width={36} height={33} alt="mail" />
               </Link>
             </FadeUp>
             <FadeUp delay={0.5}>
-              <Link href="https://www.linkedin.com/in/prajjwaldesigns/">
+              <Link
+                href="https://www.linkedin.com/in/prajjwaldesigns/"
+                target="_blank"
+              >
                 <Image
                   src={"/linkedin.svg"}
                   width={36}
@@ -55,7 +64,10 @@ const BlackBar = () => {
               </Link>
             </FadeUp>
             <FadeUp delay={0.6}>
-              <Link href="https://www.behance.net/PrajjwalDesigns">
+              <Link
+                href="https://www.behance.net/PrajjwalDesigns"
+                target="_blank"
+              >
                 <Image
                   src={"/behance.svg"}
                   width={36}

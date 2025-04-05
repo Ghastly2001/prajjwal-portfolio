@@ -14,7 +14,7 @@ const BringSection = () => {
       </FadeUp>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-[26px] mt-[40px]">
         <FadeUp className=" border border-[#EBEBEB] rounded-xl  flex flex-col gap-[30px] p-4">
-          <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
+          <div className="relative flex items-center justify-center h-[70px] lg:h-[150px] w-full -z-10">
             <video
               src={"/desktop_assets/homepage/research.mp4"}
               autoPlay
@@ -31,21 +31,22 @@ const BringSection = () => {
         </FadeUp>
         <FadeUp
           delay={0.1}
-          className=" border border-[#EBEBEB] rounded-xl  flex flex-col gap-[30px] p-4"
+          className="border border-[#EBEBEB] rounded-xl flex flex-col gap-[30px] p-4 w-full"
         >
-          <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
+          <div className="relative flex items-center justify-center h-[70px] lg:h-[150px] w-full -z-10">
             <video
               src={"/desktop_assets/homepage/lofi.mp4"}
               autoPlay
               loop
               muted
               playsInline
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-md"
             />
           </div>
-          <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy">
-            Rough <span className="font-bold"> sketches/ideations </span> or{" "}
-            <span className="font-bold">low- fidelity</span> mockups of your
+
+          <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy break-words leading-[22px] sm:leading-[26px]">
+            Rough <span className="font-bold">sketches/ideations</span> or{" "}
+            <span className="font-bold">low-fidelity</span> mockups of your
             initial ideas.
           </p>
         </FadeUp>
@@ -53,7 +54,7 @@ const BringSection = () => {
           delay={0.2}
           className="border border-[#EBEBEB] rounded-xl flex flex-col gap-[30px] p-4"
         >
-          <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
+          <div className="relative flex items-center justify-center h-[70px] lg:h-[150px] w-full -z-10">
             <video
               src={"/desktop_assets/homepage/analysis-of-design.mp4"}
               autoPlay
@@ -72,7 +73,7 @@ const BringSection = () => {
           delay={0.3}
           className="border border-[#EBEBEB] rounded-xl flex flex-col gap-[30px] p-4"
         >
-          <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
+          <div className="relative flex items-center justify-center h-[70px] lg:h-[150px] w-full -z-10">
             <video
               src={"/desktop_assets/homepage/hifi.mp4"}
               autoPlay
@@ -91,7 +92,7 @@ const BringSection = () => {
           delay={0.4}
           className=" border border-[#EBEBEB] rounded-xl  flex flex-col gap-[30px] p-4"
         >
-          <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
+          <div className="relative flex items-center justify-center h-[70px] lg:h-[150px] w-full -z-10">
             <video
               src={"/desktop_assets/homepage/usability-issues.mp4"}
               autoPlay
@@ -111,7 +112,7 @@ const BringSection = () => {
           delay={0.5}
           className="border border-[#EBEBEB] rounded-xl  flex flex-col gap-[30px] p-4"
         >
-          <div className="relative flex items-center justify-center h-[150px] w-full -z-10">
+          <div className="relative flex items-center justify-center lg:h-[150px] w-full -z-10">
             <video
               src={"/desktop_assets/homepage/system-design.mp4"}
               autoPlay
