@@ -22,7 +22,7 @@ const HeroSection = () => {
             <div className="text-4xl sm:text-5xl font-semibold tracking-tight max-w-[400px]">
               Product Experience Designer
             </div>
-            <p className="text-sm font-semibold leading-relaxed font-gilroy mt-6 mb-2">
+            <p className="text-[16px] font-semibold leading-relaxed font-gilroy mt-6 mb-2">
               enjoy turning messy, real-world problems into design that makes
               sense and makes things easier for people.
             </p>
@@ -47,7 +47,7 @@ const HeroSection = () => {
             </div>
           </FadeUp>
           <FadeUp delay={0.25}>
-            <p className="text-[#333333] text-xs sm:text-sm font-gilroy font-medium mt-2">
+            <p className="text-[#333333] text-xs sm:text-sm font-gilroy font-normal mt-2">
               As a student, I&apos;ve developed strong independent and
               team-working skills, and now I&apos;m ready to contribute my
               expertise to a company.

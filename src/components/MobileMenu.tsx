@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { MenuIcon, X } from "lucide-react";
@@ -14,6 +15,14 @@ interface IMobileMenu {
 
 const MobileMenu = ({ className, links }: IMobileMenu) => {
   const [opened, setOpened] = useState(false);
+
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/new/resume.pdf";
+    link.download = "resume.pdf";
+    link.click();
+    setOpened(!opened);
+  };
 
   const data = links.map((item, index) => (
     <motion.div
@@ -34,6 +43,12 @@ const MobileMenu = ({ className, links }: IMobileMenu) => {
       >
         <span>{item.name}</span>
       </Link>
+      <span
+        className={`inline-block font-medium transition-all duration-300 text-2xl md:text-sm xl:text-base hover:text-gray-300 text-[#F9F6EF] font-gilroy`}
+        onClick={handleDownloadResume}
+      >
+        Resume
+      </span>
     </motion.div>
   ));
   return (
