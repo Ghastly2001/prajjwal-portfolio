@@ -66,7 +66,7 @@ const BringSection = () => {
           </div>
           <p className="text-sm lg:text-base text-[#333333] text-center font-gilroy">
             Creating detailed <span className="font-bold">documentation</span>{" "}
-            and <span className="font-bold">specs</span> of designs.
+            and <span className="font-bold">analysis</span> of designs.
           </p>
         </FadeUp>
         <FadeUp

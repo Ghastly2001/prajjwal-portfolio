@@ -12,6 +12,7 @@ export const projects = {
         medal: true,
         desc: "Secured 3rd place nationally at the NIFT x ONDC 5-Day UI/UX Design Hackathon. Our project delved into the psychographics of non-shoppers, crafting innovative solutions for real-world challenges in complex systems. Through in-depth research and a holistic approach, we designed and optimized user-centric experiences that seamlessly integrated functionality and innovation.",
         cta_text: "View Case Study",
+        rank: 3,
       },
       {
         image: "/ar-navigator.svg",
@@ -21,6 +22,7 @@ export const projects = {
         medal: false,
         desc: "Enhancing airport experiences with AR and VR: The Airport Guide App integrates real-time navigation, information, and entertainment to transform the way visitors interact with airports. By blending cutting-edge augmented and virtual reality, the app simplifies navigation while delivering engaging, informative content for a seamless travel experience.",
         cta_text: "View Case Study",
+        rank: 0,
       },
       {
         image: "/puspanjali.svg",
@@ -30,6 +32,7 @@ export const projects = {
         url: "https://www.behance.net/gallery/222673589/PUSPANJALI-A-STEP-TOWARDS-SPRITIUAL-FAITH-(COPY)",
         medal: false,
         cta_text: "View Case Study",
+        rank: 0,
       },
       {
         image: "/zephyr.svg",
@@ -39,6 +42,7 @@ export const projects = {
         medal: true,
         url: "https://www.behance.net/gallery/222672889/AWARD-WINNING-PROJECT-(IIT-PATNA)",
         cta_text: "View Case Study",
+        rank: 1,
       },
       {
         image: "/we-care.svg",
@@ -48,6 +52,7 @@ export const projects = {
         medal: true,
         desc: "Developed for IIIT Bengaluru's UI/UX Hackathon (Nov 2023), WE CARE secured 1st place in just 48 hours. The app addresses the critical need for a supportive online community for individuals facing mental health challenges. Using AI, WE CARE provides a safe space for users to share experiences, seek guidance, and access valuable resources, enhancing engagement, trust, and loyalty in mental health care.",
         cta_text: "View Case Study",
+        rank: 1,
       },
     ],
   },
@@ -64,6 +69,7 @@ export const projects = {
         medal: false,
         desc: "This project focuses on creating a well-balanced dog feeder that is durable, lightweight, and stylish. It should seamlessly fit into any home while being easy to clean and stable during use. Made from high-quality, pet-safe materials, the design will ensure functionality without compromising aesthetics.",
         cta_text: "View Project",
+        rank: 0,
       },
       {
         image: "/new/steam-sculpt.svg",
@@ -73,6 +79,7 @@ export const projects = {
         medal: false,
         desc: "Designing an ergonomic kettle that enhances ease of use while cooking, simplifies cleaning, and ensures comfort during travel. The project focuses on intuitive grip, spill-free pouring, effortless maintenance, and portability. It includes research, sketches, and 3D renders to create a practical and user-friendly solution.",
         cta_text: "View Project",
+        rank: 0,
       },
       {
         image: "/new/cooker.svg",
@@ -81,6 +88,7 @@ export const projects = {
         url: "https://www.behance.net/gallery/222671607/MULTIPURPOSE-COOKING-UTENSILS-FOR-TREKKERS",
         medal: false,
         desc: "This project focuses on designing durable, space-saving utensils that adapt to modern lifestyles. Ideal for small kitchens, travel, and adventure trips, they combine versatility with ease of use. The design prioritizes functionality, ergonomic comfort, and aesthetic appeal, ensuring seamless cooking and dining experiences. Innovative materials enhance durability and convenience for everyday use.",
+        rank: 0,
         cta_text: "View Project",
       },
     ],
@@ -98,6 +106,7 @@ export const projects = {
         medal: false,
         desc: "This project showcasing my recent internship work, where I delved into both UI/UX design. In fashion, I contributed to trend research, design assistance, and prototype development. In UI/UX, I focused on user research, wireframing, and creating interactive prototypes. This collection includes key documents and design samples that reflect my hands-on experience and growth throughout the internship.",
         cta_text: "View Documentation",
+        rank: 0,
       },
       {
         image: "/new/mrida.svg",
@@ -107,6 +116,7 @@ export const projects = {
         medal: false,
         desc: "This project documents Sohrai, a traditional craft of Jharkhand, created under the Ministry of Textiles initiative. Our journey to Hazaribagh allowed us to experience the intricate art of Sohrai painting, which tells stories through its threads. The documentation highlights the craft’s process, materials, and the artisans preserving this heritage, offering a visual and narrative exploration of the community. Our goal is to promote Sohrai as a vital part of India’s craft legacy, bridging tradition and the future. ",
         cta_text: "View Documentation",
+        rank: 0,
       },
       {
         image: "/new/spiritual-faith.svg",
@@ -116,6 +126,7 @@ export const projects = {
         medal: false,
         desc: "Abstract of research paper in order to publish in ICORD 2025 which talks about India's cultural significance and  flower market thrives on cultural, spiritual, and daily needs, especially in urban areas with limited green spaces. A study in Patna highlights the importance of flowers in rituals and festivals, suggesting market growth by including native varieties to meet urban demands sustainably.",
         cta_text: "View Paper",
+        rank: 0,
       },
     ],
   },

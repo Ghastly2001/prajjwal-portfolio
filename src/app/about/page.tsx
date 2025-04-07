@@ -2,7 +2,7 @@ import FadeUp from "@/components/animations/fade-up";
 
 const page = () => {
   return (
-    <div className="min-h-screen lg:min-h-[80vh] max-w-5xl mx-auto flex flex-col justify-center px-4 sm:px-6">
+    <div className="min-h-screen lg:min-h-[80vh] max-w-5xl mx-auto flex flex-col justify-center px-4 sm:px-6 gap-10">
       {/* Header */}
       <div className=" items-start gap-6 hidden lg:flex">
         <FadeUp>
@@ -43,13 +43,17 @@ const page = () => {
             </FadeUp>
             <FadeUp delay={0.4}>
               <p className="text-[#333333] leading-[28px] mt-[6px] text-sm font-medium">
-                I&apos;ve spent the last three years learning design and gained
-                a year of hands-on experience through an internship. My work has
-                been appreciated on various design platforms, which feels
-                amazing! When I&apos;m not designing, you&apos;ll find me
-                exploring new cities with a camera, capturing moments and
-                memories. <br />I believe in starting every day with excitement
-                and the drive to make a difference!
+                I&apos;m someone who loves listening to poetry and sometimes
+                even trying my hand at writing a few lines. I&apos;m super
+                curious about Indian history and culture — there&apos;s just
+                something special about knowing where we come from. I feel
+                really proud of my roots and love being connected to my
+                traditions. On the fun side, I&apos;m always up for a good game
+                of kabaddi or just roaming around with my camera, capturing
+                random moments. And oh, I don&apos;t know why, but I&apos;ve
+                always felt a little extra attached to old people — listening to
+                their stories just hits different. Honestly, I just like doing
+                things that make me feel present and happy.
               </p>
             </FadeUp>
           </div>

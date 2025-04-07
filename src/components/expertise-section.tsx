@@ -48,7 +48,7 @@ const ExpertiseSection = () => {
             <FadeUp delay={0.1}>
               <p className="text-sm text-[#F9F6EF] w-full tracking-wider leading-[28px] font-gilroy">
                 From creating wireframes and prototypes to high-fidelity mockups
-                and animations, I blend design tools and fashion insights to
+                and animations, I blend design tools and design insights to
                 bring my creations to life.
               </p>
             </FadeUp>

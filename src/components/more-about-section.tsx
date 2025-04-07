@@ -17,23 +17,23 @@ const MoreAboutSection = () => {
             </h1>
           </FadeUp>
           <FadeUp delay={0.2}>
-            <p className="leading-[28px] text-sm  text-[#333333] mt-[34px] font-gilroy">
-              I&apos;m Prajjwal Kumar, an agile and collaborative designer who
-              isn&apos;t afraid to take risks. I thrive in dynamic environments
-              that require me to step out of my comfort zone and challenge me to
-              grow. As a self-taught Fashion and UX designer, I take ownership
-              of my work and don&apos;t let roles define what is expected of me.
+            <p className="leading-[28px] text-sm  text-[#333333] mt-[34px] font-gilroy font-medium">
+              Hi, I&apos;m Prajjwal — a designer by profession and an old-school
+              heart by nature. Learning new ways of design and exploring tools
+              that bring ideas to life is something I genuinely enjoy.
             </p>
           </FadeUp>
           <FadeUp delay={0.3}>
-            <p className="leading-[28px]  text-sm text-[#333333] mt-[28px] font-gilroy">
-              When I&apos;m not immersed in work, you can find me exploring new
-              cities with a camera in my hand. &apos;s about balance, and
-              I&apos;m all about embracing every aspect of it.
+            <p className="leading-[28px]  text-sm text-[#333333] mt-[28px] font-gilroy font-medium">
+              Beyond work, I love staying connected to my roots, finding joy in
+              the smallest moments — whether it&apos;s poetry, kabaddi, or
+              listening to stories from the elderly. Always up for good vibes,
+              good conversations, and doing everything with a little extra
+              heart.
             </p>
           </FadeUp>
           <FadeUp delay={0.4}>
-            <p className="leading-[28px] text-sm  text-[#333333] mt-[28px] font-gilroy">
+            <p className="leading-[28px] text-sm  text-[#333333] mt-[28px] font-gilroy font-medium">
               I believe in waking up each day eager to make a difference!
             </p>
           </FadeUp>
@@ -43,6 +43,8 @@ const MoreAboutSection = () => {
             src="/desktop_assets/homepage/about-me.mp4"
             autoPlay
             loop
+            muted
+            playsInline
             className="w-full aspect-square object-cover"
           />
         </FadeUp>

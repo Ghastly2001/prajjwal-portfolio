@@ -22,6 +22,7 @@ function ProjectsPageContent() {
       medal: boolean;
       desc: string;
       cta_text: string;
+      rank: number;
     }[]
   >([]);
   const category = searchParams.get("category");
@@ -42,6 +43,7 @@ function ProjectsPageContent() {
           medal: boolean;
           desc: string;
           cta_text: string;
+          rank: number;
         }[]
       );
       setCategoryProjects(allProjects);
@@ -49,9 +51,9 @@ function ProjectsPageContent() {
   }, [category]);
 
   return (
-    <div className="max-w-5xl mx-auto mb-[172px] px-4 sm:px-10">
+    <div className="max-w-5xl mx-auto mb-[80px] lg:mb-[172px] px-4 sm:px-10">
       {category && (
-        <div className="flex items-center flex-col-reverse lg:flex-row gap-6 lg:gap-[150px] pt-[112px]">
+        <div className="flex items-center flex-col-reverse lg:flex-row gap-6 lg:gap-[150px] lg:pt-[112px] pt-[40px]">
           <div className="max-w-[650px]">
             <FadeUp>
               <h1 className="text-[#FF667D] font-bold">
@@ -85,13 +87,15 @@ function ProjectsPageContent() {
           </div>
           <FadeUp
             delay={0.3}
-            className="relative w-[238px] h-[156px] lg:w-[400px] lg:h-[280px]"
+            className="relative w-[238px] h-[156px] lg:w-2/3 lg:h-2/3"
           >
             <video
               src={projects[category as keyof typeof projects].image}
               autoPlay
               loop
+              muted
               playsInline
+              className="w-full h-full object-cover"
             />
           </FadeUp>
         </div>
@@ -103,6 +107,7 @@ function ProjectsPageContent() {
               {...project}
               key={project.title}
               cta_text={project.cta_text}
+              rank={project.rank}
             />
           </FadeUp>
         ))}
@@ -132,7 +137,7 @@ function ProjectCard({
   url,
   medal,
   desc,
-
+  rank,
   cta_text,
 }: {
   image?: string;
@@ -141,7 +146,7 @@ function ProjectCard({
   url?: string;
   medal?: boolean;
   desc?: string;
-
+  rank: number;
   cta_text: string;
 }) {
   return (
@@ -154,6 +159,7 @@ function ProjectCard({
         title={title}
         url={url}
         cta_text={cta_text}
+        rank={rank}
       />
     </div>
   );
@@ -169,6 +175,7 @@ const Card = ({
   medal,
   desc,
   cta_text,
+  rank,
 }: {
   image?: string;
   badge?: string;
@@ -177,10 +184,11 @@ const Card = ({
   medal?: boolean;
   desc?: string;
   cta_text: string;
+  rank: number;
 }) => {
   return (
     <Suspense fallback={<div>Loading..</div>}>
-      <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-8">
+      <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-8 group">
         <motion.div
           className={`min-w-full h-[300px] lg:min-w-[530px] lg:h-[450px] overflow-hidden rounded-x relative`}
           onClick={() => window.open(url, "_blank")}
@@ -208,23 +216,31 @@ const Card = ({
         </motion.div>
         <div className="w-full h-full flex flex-col justify-end gap-4 bg-[#F9F6EF]">
           <div className="flex items-center gap-4 mt-auto">
-            {medal && (
-              <Image src={"/medal-3.svg"} width={20} height={20} alt="medal" />
+            {medal && rank > 0 && (
+              <Image
+                src={`/medal-${rank}.svg`}
+                width={20}
+                height={20}
+                alt="medal"
+              />
             )}
             <p className="text-xs font-bold bg-[#FFE8EB] px-3 py-2 rounded-full text-[#FF667D] font-gilroy">
               {badge}
             </p>
           </div>
           <h1 className="text-2xl font-bold">{title}</h1>
-          <p className="text-sm text-[#333333] leading-[32px] font-gilroy font-medium ">
+          <p className="text-sm text-[#333333] leading-[25px] font-gilroy font-medium ">
             {desc}
           </p>
           <button
-            className="flex items-center text-sm font-bold text-[#FF667D] gap-4"
+            className="flex items-center text-sm font-bold text-[#FF667D] gap-4 "
             onClick={() => window.open(url, "_blank")}
           >
             {cta_text}
-            <ArrowRight strokeWidth={1} />
+            <ArrowRight
+              strokeWidth={1}
+              className="group-hover:ml-1 transition-all duration-300"
+            />
           </button>
         </div>
       </div>

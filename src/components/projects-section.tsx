@@ -44,7 +44,10 @@ const ProjectsSection = () => {
           </p>
         </FadeUp>
         <FadeUp delay={0.3}>
-          <Link href={"https://www.behance.net/PrajjwalDesigns"}>
+          <Link
+            href={"https://www.behance.net/PrajjwalDesigns"}
+            target="_blank"
+          >
             <button className="border border-[#FF667D] py-3 px-5 rounded-full bg-[#FF667D] text-[#F9F6EF] font-bold hover:bg-transparent hover:text-[#FF667D] transition-all mt-[24px] text-base lg:text-lg font-gilroy">
               View All Design Works
             </button>
