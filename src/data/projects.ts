@@ -62,7 +62,7 @@ export const projects = {
     image: "/desktop_assets/product-project-page/product-page.mp4",
     project_list: [
       {
-        image: "/new/feeder.svg",
+        image: "/new/feeder.png",
         badge: "Academic Project",
         title: "Feeder",
         url: "https://www.behance.net/gallery/222672689/Dog-Feeder",
@@ -72,7 +72,7 @@ export const projects = {
         rank: 0,
       },
       {
-        image: "/new/steam-sculpt.svg",
+        image: "/new/steam-sculpt.png",
         badge: "Academic Project",
         title: "STEAM SCULPT",
         url: "https://www.behance.net/gallery/222670929/Kettle-Dog",
@@ -82,7 +82,7 @@ export const projects = {
         rank: 0,
       },
       {
-        image: "/new/cooker.svg",
+        image: "/new/cooker.png",
         badge: "Academic Project",
         title: "MULTIPURPOSE COOKER",
         url: "https://www.behance.net/gallery/222671607/MULTIPURPOSE-COOKING-UTENSILS-FOR-TREKKERS",
