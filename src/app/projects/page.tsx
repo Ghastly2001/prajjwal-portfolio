@@ -79,7 +79,7 @@ function ProjectsPageContent() {
               target="_blank"
             >
               <FadeUp delay={0.3}>
-                <button className="border border-[#FF667D] lg:py-3.5 py-2 px-8 rounded-full font-bold bg-[#FF667D] hover:bg-transparent text-[#F9F6EF] hover:text-[#FF667D] transition-all w-full lg:w-auto text-center mt-6">
+                <button className="border border-[#FF667D] lg:py-3.5 py-2 px-8 rounded-full font-bold bg-[#FF667D] hover:bg-transparent text-[#F9F6EF] hover:text-[#FF667D] transition-all w-auto lg:w-auto text-center mt-6">
                   View All Works
                 </button>
               </FadeUp>
