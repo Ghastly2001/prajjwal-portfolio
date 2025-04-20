@@ -8,7 +8,7 @@ export const projects = {
         image: "/digi-haat.svg",
         badge: "Graduation Project",
         title: "Revamping DigiHaat",
-        url: "https://www.behance.net/gallery/224082411/Revamping-DigiHaat-Graduation-Project",
+        url: "https://www.behance.net/gallery/224083127/Revamping-DigiHaat-Graduation-Project",
         medal: false,
         desc: "Working on DigiHaat within the ONDC ecosystem, focusing on the complete UX process—problem identification, user research, wireframing, UI design, and prototyping. ONDC, a Government of India initiative, aims to build an open, inclusive e-commerce network. DigiHaat contributes by enabling local artisans and MSMEs to participate fairly in the digital marketplace.",
         cta_text: "View Case Study",
